@@ -10,9 +10,9 @@ def key_for_min_value(name_hash)
   lowest_value = Float::MAX
   
   name_hash.each do |key,val|
-    if val < lowest_key
+    if val < lowest_value
       lowest_key = key
-      lowest_value = values
+      lowest_value = val
     end
   end
   lowest_key
