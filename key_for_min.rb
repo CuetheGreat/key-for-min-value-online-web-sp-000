@@ -5,12 +5,12 @@ def key_for_min_value(name_hash)
   item = ""
   name_hash.each do |key, value|
     name_hash.each do |key2, value2|
+      puts "Comparing #{key}: #{value} with #{key2}: #{value2}"
       if value <= value2
+        puts 
         item = key
-        puts item
       end
     end
   end
-  
   item
 end
