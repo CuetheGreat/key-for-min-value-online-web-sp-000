@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
   end
-  lowest_key
-  lowest_value =
+  lowest_key = nil
+  lowest_value = Float::infinity
   
 end
