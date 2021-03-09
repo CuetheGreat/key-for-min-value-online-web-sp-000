@@ -6,6 +6,13 @@ def key_for_min_value(name_hash)
     return nil
   end
   lowest_key = nil
-  lowest_value = Float::infinity
+  lowest_value = Float::MAX
   
+  name_hash.each do |key,val|
+    if val < lowest_key
+      lowest_key = key
+      lowest_value = values
+    end
+  end
+  lowest_key
 end
