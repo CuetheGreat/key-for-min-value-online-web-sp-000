@@ -6,7 +6,8 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
     name_hash.each do |key2, value2|
       if value <= value2
-        item = keyputs item
+        item = key
+        puts item
       end
     end
   end
